@@ -6,6 +6,9 @@ function generatePassword() {
 
   var upperCase = confirm("Would you like to have uppercase letters in your password?")
 
+  var numeric = confirm("Would you like to have numbers in your password?")
+
+
   console.log(length);
 }
 // Write password to the #password input
