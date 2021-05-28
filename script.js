@@ -13,6 +13,7 @@ function generatePassword() {
 
   var specialCharacters = confirm("Would you like to have special characters in your password?")
 while(lowerCase === false && upperCase === false && numeric === false && specialCharacters === false){
+  alert("Please select atleast one type")
   lowerCase = confirm("Would you like to have lowercase letters in your password?")
 
   upperCase = confirm("Would you like to have uppercase letters in your password?")
