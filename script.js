@@ -1,7 +1,9 @@
 // Assignment Code
 var generateBtn = document.querySelector("#generate");
 function generatePassword() {
-  var length = prompt("How long would you like your password to be?");
+  var length = prompt("How long would you like your password to be? Between 8 and 128 characters");
+  var lowerCase = confirm("Would you like to have lowercase letters in your password?")
+  
   console.log(length);
 }
 // Write password to the #password input
