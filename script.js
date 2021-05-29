@@ -1,6 +1,7 @@
 var lower = "abdcefghijklmnopqrstuvwxyz"
 var upper = lower.toUpperCase()
 var numbers = "0123456789"
+var special = "!#$%&‘()*+,-./:;<=>?@[]^_`{|}~"
 var generateBtn = document.querySelector("#generate");
 function generatePassword() {
   var length = prompt("How long would you like your password to be? Between 8 and 128 characters");
@@ -24,7 +25,12 @@ while(lowerCase === false && upperCase === false && numeric === false && special
 
    specialCharacters = confirm("Would you like to have special characters in your password?")
 }
-
+var password = ""
+var choosenTypes = ""
+if(lowerCase) {
+  password += lower[Math.floor(Math.random()*lower.length)]
+  choosenTypes += lower
+}
   
 }
 // Write password to the #password input
