@@ -1,4 +1,6 @@
-// Assignment Code
+var lower = "abdcefghijklmnopqrstuvwxyz"
+var upper = lower.toUpperCase()
+var numbers = "0123456789"
 var generateBtn = document.querySelector("#generate");
 function generatePassword() {
   var length = prompt("How long would you like your password to be? Between 8 and 128 characters");
@@ -23,7 +25,7 @@ while(lowerCase === false && upperCase === false && numeric === false && special
    specialCharacters = confirm("Would you like to have special characters in your password?")
 }
 
-  console.log(length);
+  
 }
 // Write password to the #password input
 function writePassword() {
